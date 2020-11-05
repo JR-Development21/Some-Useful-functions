@@ -11,6 +11,7 @@
 #' post_pred_2norm(data_list, mu, nu, b, alpha)
 
 post_pred_2norm <- function(data_list, mu, nu, b, alpha){
+  num_score <- sapply(data_list, length)
   prior_mu <- mu
   prior_nu <- nu
   prior_beta <- b
